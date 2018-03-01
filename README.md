@@ -1,12 +1,10 @@
-# jetsonTX1GPIO
-A straightforward library to interface with the NVIDIA Jetson TX1 Development Kit GPIO  pins.
+# jetsonTX2GPIO
+A straightforward library to interface with the NVIDIA Jetson TX2 Development Kit GPIO pins.
 
-Based on Software by RidgeRun
-https://developer.ridgerun.com/wiki/index.php/Gpio-int-test.c
- * Copyright (c) 2011, RidgeRun
- * All rights reserved.
+Based on https://github.com/jetsonhacks/jetsonTX1GPIO.git
 
-and ideas from Derek Malloy Copyright (c) 2012
-https://github.com/derekmolloy/beaglebone
+The example gpio.cpp toggles J21 Pin 37 at maximun speed (~50kHz).
 
-exampleGPIApp.cpp describes a simple usage case using a tactile button and LED as input and output.
+Run build.sh to bulid the example.
+
+Run export.sh prior to running the example (requires root privileges).

@@ -85,6 +85,9 @@ enum jetsonTX1GPIONumber {
        gpio219 = 219,    // J21 - Pin 29 - Output - GPIO19_AUD_RST
 } ;
 
+enum jetsonTX2GPIONumber {
+       gpio388 = 388    // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
+} ;
 
 int gpioExport ( jetsonGPIO gpio ) ;
 int gpioUnexport ( jetsonGPIO gpio ) ;

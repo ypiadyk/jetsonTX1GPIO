@@ -39,8 +39,14 @@ int main(int argc, char *argv[]){
 
     cout << "Testing the GPIO Pins" << endl;
 
+    jetsonTX2GPIONumber J21_pin37 = gpio388; // Ouput
 
-    jetsonTX1GPIONumber redLED = gpio219 ;     // Ouput
+    while (1) {
+        gpioSetValue(J21_pin37, on);
+        gpioSetValue(J21_pin37, off);
+    }
+
+    /*jetsonTX1GPIONumber redLED = gpio219 ;     // Ouput
     jetsonTX1GPIONumber pushButton = gpio38 ; // Input
     // Make the button and led available in user space
     gpioExport(pushButton) ;
@@ -86,11 +92,11 @@ int main(int argc, char *argv[]){
 
         }
         usleep(1000); // sleep for a millisecond
-    }
+    }*/
 
     cout << "GPIO example finished." << endl;
-    gpioUnexport(redLED);     // unexport the LED
-    gpioUnexport(pushButton);      // unexport the push button
+//    gpioUnexport(redLED);     // unexport the LED
+//    gpioUnexport(pushButton);      // unexport the push button
     return 0;
 }
 
