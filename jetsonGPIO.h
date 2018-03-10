@@ -86,7 +86,8 @@ enum jetsonTX1GPIONumber {
 } ;
 
 enum jetsonTX2GPIONumber {
-       gpio388 = 388    // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
+       gpio388 = 388,    // J21 - Pin 37 - Output - GPIO8_ALS_PROX_INT
+       gpio298 = 298    // J21 - Pin 31 - Output - GPIO9_MOTION_INT
 } ;
 
 int gpioExport ( jetsonGPIO gpio ) ;

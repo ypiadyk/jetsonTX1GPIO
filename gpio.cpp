@@ -40,10 +40,13 @@ int main(int argc, char *argv[]){
     cout << "Testing the GPIO Pins" << endl;
 
     jetsonTX2GPIONumber J21_pin37 = gpio388; // Ouput
+    jetsonTX2GPIONumber J21_pin31 = gpio298; // Ouput
 
     while (1) {
         gpioSetValue(J21_pin37, on);
+        gpioSetValue(J21_pin31, on);
         gpioSetValue(J21_pin37, off);
+        gpioSetValue(J21_pin31, off);
     }
 
     /*jetsonTX1GPIONumber redLED = gpio219 ;     // Ouput
